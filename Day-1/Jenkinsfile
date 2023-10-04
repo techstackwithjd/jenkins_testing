@@ -7,15 +7,12 @@ pipeline {
                 echo "this is build stage"
             }
         }
-    }
-    stages {
+    
         stage("testing") {
             steps {
                 echo "this is testing stage"
             }
         }
-    }
-    stages {
         stage("package") {
             steps {
                 echo "this is packaging stage"
