@@ -21,6 +21,7 @@ pipeline {
         stage("package") {
             steps {
                 echo "this is packaging stage"
+                echo123
             }
         }
     }
