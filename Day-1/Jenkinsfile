@@ -25,7 +25,7 @@ pipeline {
         }
     }
 
-}
+
 
 post {
     always {
@@ -37,5 +37,7 @@ post {
     success{
         echo " i execute on success"
     }
+
+}
 
 }
