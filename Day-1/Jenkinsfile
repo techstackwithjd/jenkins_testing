@@ -8,6 +8,7 @@ pipeline {
         stage("Build") {
             steps {
                 echo "this is build stage"
+        
             }
         }
     
@@ -22,6 +23,19 @@ pipeline {
                 echo "this is packaging stage"
             }
         }
+    }
+
+}
+
+post {
+    always {
+        echo "I always execuste"
+    }
+    failure{
+        echo "I execute on failure"
+    }
+    success{
+        echo " i execute on success"
     }
 
 }
