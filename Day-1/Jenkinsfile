@@ -3,7 +3,9 @@ pipeline {
      options {
         ansiColor('xterm')
      }
-
+    ansiColor('css') {
+       sh "ls -al"
+    }
     stages {
         stage("Build") {
             steps {
