@@ -32,11 +32,11 @@ post {
     always {
         echo "I always execuste"
     }
-    failure{
+    failure {
         echo "I execute on failure"
     }
-    success{
-        echo " i execute on success"
+    success {
+        echo  "I execute on success"
     }
 
 }
