@@ -1,6 +1,9 @@
 pipeline {
     agent any
 
+       environment {
+        my_env_var = credentials('ssh_credentials')
+    }
 
 
     stages {
@@ -13,19 +16,17 @@ pipeline {
     
         stage("ENVI") {
 
-            environment {
-                        KEY1 = 'VALUE1'
-                        KEY2 = 'VALUE2'
-                }
+        
             steps {
-               echo "${KEY1}"
-               echo "${KEY2}" 
+               
+               echo 'printenv'
+            //    echo '${my_env_var}'
 
                 
             }
         }
         stage("package") {
-            steps {
+            steps { 
                 echo "this is packaging stage"
                 echo "after approval1"
                 
