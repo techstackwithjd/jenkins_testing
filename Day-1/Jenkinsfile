@@ -1,9 +1,9 @@
 pipeline {
     agent any
 
-    //    environment {
-    //     my_env_var = credentials('ssh_credentials')
-    // }
+       environment {
+        my_env_var = credentials('ssh_credentials')
+    }
 
 
     stages {
@@ -19,8 +19,9 @@ pipeline {
         
             steps {
                
-               sh 'printenv'
-            //    echo '${my_env_var}'
+            //    sh 'printenv'
+               echo '${my_env_var_PSW}'
+               echo '${my_env_var_USR}'
 
                 
             }
