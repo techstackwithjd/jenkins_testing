@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         KEY1 = 'VALUE1'
-        KEY2    = 'VALUE2'
+        KEY2 = 'VALUE2'
     }
 
     stages {
@@ -14,10 +14,11 @@ pipeline {
             }
         }
     
-        stage("testing") {
+        stage("ENVI") {
             steps {
                 
-                input "Do you want to  package "
+               echo "${KEY1}"
+               echo "${KEY2}" 
 
                 
             }
