@@ -1,8 +1,10 @@
 pipeline {
     agent any
-    //  options {
-    //     ansiColor('xterm')
-    //  }
+
+    environment {
+        KEY1 = 'VALUE1'
+        KEY2    = 'VALUE2'
+  
 
     stages {
         stage("Build") {
