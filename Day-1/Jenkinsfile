@@ -15,7 +15,7 @@ pipeline {
         stage("testing") {
             steps {
                 
-                input "Do you want to  package it"
+                input "Do you want to  package "
 
                 
             }
@@ -23,7 +23,7 @@ pipeline {
         stage("package") {
             steps {
                 echo "this is packaging stage"
-                error "webhook"
+                echo "after approval"
                 
             }
         }
