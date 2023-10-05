@@ -19,7 +19,7 @@ pipeline {
         
             steps {
                
-               echo 'printenv'
+               sh 'printenv'
             //    echo '${my_env_var}'
 
                 
