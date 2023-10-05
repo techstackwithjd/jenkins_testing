@@ -1,9 +1,9 @@
 pipeline {
     agent any
 
-       environment {
-        my_env_var = credentials('ssh_credentials')
-    }
+    //    environment {
+    //     my_env_var = credentials('ssh_credentials')
+    // }
 
 
     stages {
