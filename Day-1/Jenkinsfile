@@ -23,7 +23,7 @@ pipeline {
         stage("package") {
             steps {
                 echo "this is packaging stage"
-                echo "after approval"
+                echo "after approval1"
                 
             }
         }
