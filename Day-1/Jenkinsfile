@@ -12,13 +12,12 @@ pipeline {
         }
     
         stage("ENVI") {
-            steps {
 
-                environment {
+            environment {
                         KEY1 = 'VALUE1'
                         KEY2 = 'VALUE2'
                 }
-                
+            steps {
                echo "${KEY1}"
                echo "${KEY2}" 
 
