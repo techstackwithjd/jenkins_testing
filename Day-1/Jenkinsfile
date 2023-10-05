@@ -20,8 +20,8 @@ pipeline {
             steps {
                
             //    sh 'printenv'
-               echo '${my_env_var_PSW}'
-               echo '${my_env_var_USR}'
+               echo "${my_env_var_PSW}"
+               echo "${my_env_var_USR}"
 
                 
             }
